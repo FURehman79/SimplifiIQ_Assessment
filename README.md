@@ -53,11 +53,11 @@ start dashboard.html
 
 | Dashboard | Chart | Tasks |
 |------------|--------|-------|
-| ![Dashboard](assets/Screenshots/Dashboard.png) | ![Chart](assets/Screenshots/Chart.png) | ![Tasks](assets/Screenshots/Tasks.png) |
+| ![Dashboard](assets/Screenshot/Dashboard.png) | ![Chart](assets/Screenshot/Chart.png) | ![Tasks](assets/Screenshot/Tasks.png) |
 
 | Task A | Task B |
 |--------|--------|
-| ![Task A](assets/Screenshots/Task%20A.png) | ![Task B](assets/Screenshots/Task%20B.png) |
+| ![Task A](assets/Screenshot/Task%20A.png) | ![Task B](assets/Screenshot/Task%20B.png) |
 
 ---
 
