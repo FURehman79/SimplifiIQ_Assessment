@@ -1,0 +1,4 @@
+task_type,duration_min
+data_cleanup,80.0
+feature_engineering,60.0
+model_training,120.0

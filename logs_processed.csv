@@ -1,0 +1,8 @@
+user,task_type,start,duration_min,start_parsed,row_status
+aisha,data_cleanup,2025-10-18 09:10:12,35.0,2025-10-18 09:10:12,ok
+aisha,model_training,2025-10-18 10:00:00,120.0,2025-10-18 10:00:00,ok
+bilal,data_cleanup,2025-10-18 11:00:00,45.0,2025-10-18 11:00:00,ok
+bilal,feature_engineering,2025-10-18 12:15:00,60.0,2025-10-18 12:15:00,ok
+charu,model_training,2025-10-18 13:00:00,,2025-10-18 13:00:00,bad_duration
+daud,data_annotation,2025-10-18 14:00:00,,2025-10-18 14:00:00,bad_duration
+aisha,data_annotation,invalid-timestamp,20.0,,bad_timestamp

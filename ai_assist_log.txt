@@ -1,0 +1,1 @@
+Used ChatGPT for guidance in designing CSV analysis logic, placeholder Gemini integration, and workflow explanation.

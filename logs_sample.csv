@@ -1,0 +1,8 @@
+user,task_type,start,duration_min
+aisha,data_cleanup,2025-10-18 09:10:12,35
+aisha,model_training,2025-10-18 10:00:00,120
+bilal,data_cleanup,2025-10-18 11:00:00,45
+bilal,feature_engineering,2025-10-18 12:15:00,60
+charu,model_training,2025-10-18 13:00:00,NaN
+daud,data_annotation,2025-10-18 14:00:00,-30
+aisha,data_annotation,invalid-timestamp,20

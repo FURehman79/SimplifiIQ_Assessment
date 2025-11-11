@@ -1,0 +1,3 @@
+Hardest part: Handling invalid CSV values and HTML parsing issues. Making the scripts robust took effort.
+If failed: I'd debug by printing intermediate DataFrame stats and checking request responses.
+Automation tools: n8n can automate scraping, LangChain can handle prompt templating for summaries.

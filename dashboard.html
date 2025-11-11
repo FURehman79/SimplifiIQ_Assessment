@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SimplifiIQ Dashboard</title>
+  <style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141E30, #243B55);
+  color: #fff;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #FFB300;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+section {
+  margin-bottom: 60px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+h2 {
+  border-left: 6px solid #FFB300;
+  padding-left: 10px;
+  color: #FFB300;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+th {
+  background-color: rgba(255, 179, 0, 0.3);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712139.png">
+
+</head>
+<body>
+  <h1>🚀 SimplifiIQ Assessment Dashboard</h1>
+  <div style="text-align:center;margin-bottom:30px;">
+  <h3 style="color:#ccc;">SimplifiIQ – AI Research Intern Assessment</h3>
+  <p style="max-width:600px;margin:auto;color:#aaa;">
+    This dashboard visualizes results from automated log analysis, web scraping, and Gemini-powered summarization modules.
+  </p>
+</div>
+
+
+  <canvas id="summaryChart" style="width:100%;max-width:600px;margin:auto;display:block;"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('summaryChart');
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Log Analysis', 'Web Automation', 'Summarization'],
+    datasets: [{
+      label: 'Task Progress',
+      data: [100, 100, 100],
+      backgroundColor: ['#FFB300', '#66BB6A', '#29B6F6']
+    }]
+  },
+  options: {
+    plugins: { legend: { labels: { color: '#fff' } } }
+  }
+});
+</script>
+<p style="text-align:center;color:#bbb;font-size:14px;margin-top:50px;">
+  🚀 Powered by <strong>Google Gemini 2.5 Flash</strong> | Developed by <strong>Faizan Ur Rehman</strong>
+</p>
+
+
+  <h2>Part A – User Summary</h2>
+  <table id="userSummary"></table>
+
+  <h2>Part B – Web Automation Results</h2>
+  <table id="webResults"></table>
+
+  <script>
+  const userSummaryData = [
+    ["user","duration_min"],
+    ["aisha","155.0"],
+    ["bilal","105.0"]
+  ];
+
+  const webResultsData = [
+    ["url","title","meta","summary"],
+    ["https://example.com","Title of example","Meta of example","MOCK SUMMARY: Title of example - Meta of example"],
+    ["https://www.python.org","Title of python","Meta of python","MOCK SUMMARY: Title of python - Meta of python"],
+    ["https://www.wikipedia.org","Title of wiki","Meta of wiki","MOCK SUMMARY: Title of wiki - Meta of wiki"]
+  ];
+
+  function makeTable(data, tableId) {
+    const table = document.getElementById(tableId);
+    table.innerHTML = "";
+    data.forEach((row, i) => {
+      const tr = document.createElement("tr");
+      row.forEach(cell => {
+        const td = document.createElement(i === 0 ? "th" : "td");
+        td.textContent = cell;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+  }
+
+  makeTable(userSummaryData, "userSummary");
+  makeTable(webResultsData, "webResults");
+</script>
+<p style="text-align:center;color:#aaa;font-size:14px;margin-top:20px;">
+🙏 Thank you for reviewing my SimplifiIQ AI Research Intern Assessment.
+<p style="text-align:center;color:#aaa;font-size:14px;margin-top:20px;">
+✨And Thank you for your time and consideration.
+</p>
+
+</p>
+
+</body>
+</html>
